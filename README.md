@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# drscanprofile
+
+This project is a mobile-friendly profile showcase application built with Next.js and Tailwind CSS. It allows users to view individual profiles, including display pictures, contact details, profile descriptions, and professional identification details such as PRN numbers for doctors.
+
+## Project Structure
+
+```
+drscanprofile
+├── src
+│   ├── pages
+│   │   ├── index.tsx           # Homepage displaying a list of profiles or a welcome message
+│   │   └── [profile].tsx       # Dynamic route for individual profile pages
+│   ├── components
+│   │   ├── ProfileCard.tsx     # Component for displaying profile information
+│   │   └── ContactDetails.tsx  # Component for displaying contact details
+│   ├── styles
+│   │   └── globals.css         # Global styles including Tailwind CSS imports
+│   └── types
+│       └── profile.ts          # TypeScript interfaces for profile data structure
+├── public
+│   └── profiles
+│       └── foo-bar.jpg         # Sample profile image for Mr. Foo Bar
+├── postcss.config.mjs          # PostCSS configuration
+├── package.json                # npm configuration and dependencies
+├── tsconfig.json               # TypeScript configuration
+└── README.md                   # Project documentation
+```
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/drscanprofile.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+   ```
+   cd drscanprofile
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install the dependencies:
+   ```
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+   ```
+   npm run dev
+   ```
 
-## Learn More
+5. Open your browser and visit `http://localhost:3000` to see the application in action.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- The homepage (`/`) displays a list of profiles or a welcome message.
+- Individual profiles can be accessed via unique routes, e.g., `/foo-bar` for Mr. Foo Bar.
+- Each profile page includes a display picture, contact details, and a description.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the LICENSE file for details.
