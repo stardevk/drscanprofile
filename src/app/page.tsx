@@ -15,7 +15,7 @@ const Home = () => {
         <Link href="/foo-bar" className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition">
           <div>
             <Image
-              src="/profiles/foo-bar.jpeg"
+              src="profiles/foo-bar.jpeg"
               alt="Foo Bar"
               width={400}
               height={192}
@@ -30,7 +30,7 @@ const Home = () => {
         <Link href="/john-doe" className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition">
           <div>
             <Image
-              src="/profiles/john-doe.jpeg"
+              src="profiles/john-doe.jpeg"
               alt="John Doe"
               width={400}
               height={192}

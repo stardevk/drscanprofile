@@ -4,7 +4,7 @@ import { Profile } from '@/types/profile';
 const profileData: Record<string, Profile> = {
   'foo-bar': {
     name: 'Mr. Foo Bar',
-    displayPicture: '/profiles/foo-bar.jpeg',
+    displayPicture: 'profiles/foo-bar.jpeg',
     description: 'A brief description about Mr. Foo Bar.',
     contactDetails: {
       phone: '123-456-7890',
@@ -16,7 +16,7 @@ const profileData: Record<string, Profile> = {
   },
   'john-doe': {
     name: 'John Doe',
-    displayPicture: '/profiles/john-doe.jpeg',
+    displayPicture: 'profiles/john-doe.jpeg',
     description: 'A brief description about John Doe.',
     contactDetails: {
       phone: '098-765-4321',
